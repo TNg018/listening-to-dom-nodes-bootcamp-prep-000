@@ -39,7 +39,9 @@
     </div>
   </body>
 </html>
+
 <script> 
+
 const divs = document.querySelectorAll('div')
  
 function bubble(e) {
@@ -51,4 +53,12 @@ function bubble(e) {
 for (let i = 0; i < divs.length; i++) {
   divs[i].addEventListener('click', bubble)
 } 
+
+const main = document.getElementById('main')
+ 
+main.addEventListener('click', function(event) {
+  alert('I was clicked!')
+})
+
+
 </script>
